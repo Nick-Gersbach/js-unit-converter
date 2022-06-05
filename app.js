@@ -1,15 +1,13 @@
-document.getElementById("display-el");
+let numberInput = document.getElementById("number-input");
 let lengthEl = document.getElementById("length-el");
 let volumeEl = document.getElementById("volume-el");
 let massEl = document.getElementById("mass-el");
 
 function calcLength() {
-  let metricToImperialResult =
-    document.getElementById("display-el").value * 3.28;
-  let imperialToMetricResult =
-    document.getElementById("display-el").value / 3.28;
+  let metricToImperialResult = numberInput.value * 3.28;
+  let imperialToMetricResult = numberInput.value / 3.28;
   lengthEl.innerText =
-    document.getElementById("display-el").value +
+    numberInput.value +
     " " +
     "meters =" +
     " " +
@@ -19,7 +17,7 @@ function calcLength() {
     " " +
     "|" +
     " " +
-    document.getElementById("display-el").value +
+    numberInput.value +
     " " +
     "feet =" +
     " " +
@@ -31,12 +29,10 @@ function calcLength() {
 calcLength();
 
 function calcVolume() {
-  let metricToImperialResult =
-    document.getElementById("display-el").value * 0.264172;
-  let imperialToMetricResult =
-    document.getElementById("display-el").value / 0.264172;
+  let metricToImperialResult = numberInput.value * 0.264172;
+  let imperialToMetricResult = numberInput.value / 0.264172;
   volumeEl.innerText =
-    document.getElementById("display-el").value +
+    numberInput.value +
     " " +
     "liters =" +
     " " +
@@ -46,7 +42,7 @@ function calcVolume() {
     " " +
     "|" +
     " " +
-    document.getElementById("display-el").value +
+    numberInput.value +
     " " +
     "gallons =" +
     " " +
@@ -58,12 +54,10 @@ function calcVolume() {
 calcVolume();
 
 function calcMass() {
-  let metricToImperialResult =
-    document.getElementById("display-el").value * 2.205;
-  let imperialToMetricResult =
-    document.getElementById("display-el").value / 2.205;
+  let metricToImperialResult = numberInput.value * 2.205;
+  let imperialToMetricResult = numberInput.value / 2.205;
   massEl.innerText =
-    document.getElementById("display-el").value +
+    numberInput.value +
     " " +
     "kilos =" +
     " " +
@@ -73,7 +67,7 @@ function calcMass() {
     " " +
     "|" +
     " " +
-    document.getElementById("display-el").value +
+    numberInput.value +
     " " +
     "pounds =" +
     " " +
