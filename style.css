@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.unit-converter-container {
+  width: 550px;
+  height: 550px;
+  color: #fff;
+}
+
+.unit-input {
+  background-image: linear-gradient(
+    45deg,
+    hsl(331deg 96% 60%) 0%,
+    hsl(326deg 91% 58%) 11%,
+    hsl(320deg 84% 56%) 22%,
+    hsl(314deg 75% 55%) 33%,
+    hsl(306deg 66% 53%) 44%,
+    hsl(295deg 63% 54%) 56%,
+    hsl(283deg 71% 58%) 67%,
+    hsl(270deg 79% 61%) 78%,
+    hsl(256deg 89% 65%) 89%,
+    hsl(238deg 99% 67%) 100%
+  );
+}
+
+.unit-input h1 {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.unit-input h2 {
+  font-size: 97px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.conversion-info {
+  background: #fbf7ee;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.conversion-info h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4e4e4e;
+  padding-bottom: 1rem;
+}
+
+.conversion-info p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1921;
+  padding-bottom: 1rem;
+}
+
+.unit-container {
+  padding: 1.5rem 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .unit-converter-container {
+    width: 95%;
+    height: 100vh;
+    color: #fff;
+    padding-top: 1rem;
+  }
+}
