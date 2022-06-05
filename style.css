@@ -43,11 +43,21 @@ body {
 }
 
 .unit-input h2 {
-  font-size: 97px;
   font-weight: 800;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+}
+
+.unit-input h2 input {
+  border: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+input:focus {
+  outline: none;
 }
 
 .conversion-info {

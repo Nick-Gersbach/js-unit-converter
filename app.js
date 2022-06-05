@@ -1,13 +1,15 @@
-let conversionNumber = 8;
+document.getElementById("display-el");
 let lengthEl = document.getElementById("length-el");
 let volumeEl = document.getElementById("volume-el");
 let massEl = document.getElementById("mass-el");
 
 function calcLength() {
-  let metricToImperialResult = conversionNumber * 3.28;
-  let imperialToMetricResult = conversionNumber / 3.28;
+  let metricToImperialResult =
+    document.getElementById("display-el").value * 3.28;
+  let imperialToMetricResult =
+    document.getElementById("display-el").value / 3.28;
   lengthEl.innerText =
-    conversionNumber +
+    document.getElementById("display-el").value +
     " " +
     "meters =" +
     " " +
@@ -17,7 +19,7 @@ function calcLength() {
     " " +
     "|" +
     " " +
-    conversionNumber +
+    document.getElementById("display-el").value +
     " " +
     "feet =" +
     " " +
@@ -29,10 +31,12 @@ function calcLength() {
 calcLength();
 
 function calcVolume() {
-  let metricToImperialResult = conversionNumber * 0.264172;
-  let imperialToMetricResult = conversionNumber / 0.264172;
+  let metricToImperialResult =
+    document.getElementById("display-el").value * 0.264172;
+  let imperialToMetricResult =
+    document.getElementById("display-el").value / 0.264172;
   volumeEl.innerText =
-    conversionNumber +
+    document.getElementById("display-el").value +
     " " +
     "liters =" +
     " " +
@@ -42,7 +46,7 @@ function calcVolume() {
     " " +
     "|" +
     " " +
-    conversionNumber +
+    document.getElementById("display-el").value +
     " " +
     "gallons =" +
     " " +
@@ -54,10 +58,12 @@ function calcVolume() {
 calcVolume();
 
 function calcMass() {
-  let metricToImperialResult = conversionNumber * 2.205;
-  let imperialToMetricResult = conversionNumber / 2.205;
+  let metricToImperialResult =
+    document.getElementById("display-el").value * 2.205;
+  let imperialToMetricResult =
+    document.getElementById("display-el").value / 2.205;
   massEl.innerText =
-    conversionNumber +
+    document.getElementById("display-el").value +
     " " +
     "kilos =" +
     " " +
@@ -67,7 +73,7 @@ function calcMass() {
     " " +
     "|" +
     " " +
-    conversionNumber +
+    document.getElementById("display-el").value +
     " " +
     "pounds =" +
     " " +
